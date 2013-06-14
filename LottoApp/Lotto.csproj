@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF2E597D-9796-4D97-9ED0-15A6DBDA4FAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lotto</RootNamespace>
+    <AssemblyName>Lotto</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\My Programs\VS 2012\Lotto Clickonce\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>86A8195874A4F2B3FE121985795C52875E0E6C43</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Lotto_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\GamePlay.cs" />
+    <Compile Include="Classes\Result.cs" />
+    <Compile Include="Classes\Transaction.cs" />
+    <Compile Include="ClassGlobal.cs" />
+    <Compile Include="Context\LottoContext.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LottoContext.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormImportResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormImportResult.Designer.cs">
+      <DependentUpon>FormImportResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UserControlResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlResult.Designer.cs">
+      <DependentUpon>UserControlResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlAbout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlAbout.Designer.cs">
+      <DependentUpon>UserControlAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlCombination.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlCombination.Designer.cs">
+      <DependentUpon>UserControlCombination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlGamePlay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlGamePlay.Designer.cs">
+      <DependentUpon>UserControlGamePlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlLotto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlLotto.Designer.cs">
+      <DependentUpon>UserControlLotto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlMain.Designer.cs">
+      <DependentUpon>UserControlMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlTool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlTool.Designer.cs">
+      <DependentUpon>UserControlTool.cs</DependentUpon>
+    </Compile>
+    <None Include="Context\LottoContext.dbml.layout">
+      <DependentUpon>LottoContext.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Forms\FormImportResult.resx">
+      <DependentUpon>FormImportResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="CodeTemplates\Ef4Gen\EdmxParser.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\EF4Gen.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EF4Gen.txt</LastGenOutput>
+    </None>
+    <None Include="CodeTemplates\Ef4Gen\T4Config.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\T4Generator.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\T4Helpers.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\T4Includes.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\T4SampleDataGenerator.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\T4TemplateBase.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\ConnectionBuilder.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\Context.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\ContextFactory.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\EntityRepository.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\FixupCollection.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\IContext.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\IRepository.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\IUnitOfWork.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\MockConnection.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\MockContext.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\MockObjectSet.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\MockUnitOfWork.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\Model.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\ModelPoco.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\ObservableObject.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\OData.svc.cs.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\OData.svc.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\Repository.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\T4Template.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\UnitOfWork.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\UnitTestConnectionBuilder.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\UnitTestContextFactory.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\UnitTestMockEntities.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\UnitTestMockObjectSet.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\UnitTestRepository.cs.ttinclude" />
+    <None Include="CodeTemplates\Ef4Gen\Templates\CSharp\UnitTestUnitOfWork.cs.ttinclude" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\UserControlResult.resx">
+      <DependentUpon>UserControlResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlAbout.resx">
+      <DependentUpon>UserControlAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlCombination.resx">
+      <DependentUpon>UserControlCombination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlGamePlay.resx">
+      <DependentUpon>UserControlGamePlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlLotto.resx">
+      <DependentUpon>UserControlLotto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlMain.resx">
+      <DependentUpon>UserControlMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlTool.resx">
+      <DependentUpon>UserControlTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Context\LottoContext.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LottoContext.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lotto_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CodeTemplates\Ef4Gen\EF4Gen.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EF4Gen.tt</DependentUpon>
+    </Content>
+    <Content Include="CodeTemplates\Ef4Gen\Sql\Chinook_SqlServer_AutoIncrementPKs.sql" />
+    <Content Include="CodeTemplates\Ef4Gen\Templates\VBNet\Nothing here yet.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
