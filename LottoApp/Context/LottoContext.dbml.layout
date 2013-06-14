@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LottoContext">
+  <DataContextMoniker Name="/LottoContext" />
+  <nestedChildShapes>
+    <classShape Id="c00ec4b0-3aa9-4cd7-934f-d9f7290b1947" absoluteBounds="0.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/LottoContext/Combination" />
+      <nestedChildShapes>
+        <elementListCompartment Id="583e2159-7f27-47f5-b735-80d4eb6f34d8" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc0550f3-991e-4391-9709-979f7e6b5800" absoluteBounds="3.75, 0.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/LottoContext/Result_six_42" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2069618d-e80c-4e3f-ae8e-3227e8e184bb" absoluteBounds="3.765, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a16e329-c760-48e1-8b30-db510d44d8b2" absoluteBounds="0.75, 4.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/LottoContext/Result_six_45" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d053190-d1a6-4396-8120-96d4b0de90e5" absoluteBounds="0.765, 5.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d232d66-d11c-4218-aed3-22ffca42b1b9" absoluteBounds="3.75, 4.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/LottoContext/Result_six_49" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd9d1425-2829-4e28-b27d-abdea37a8749" absoluteBounds="3.765, 5.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="662d1924-41d5-4a83-b7f6-3de230218229" absoluteBounds="6.75, 0.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/LottoContext/Result_six_55" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d15f09ae-a51b-42f7-9d75-dfdb8a9886b9" absoluteBounds="6.765, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
